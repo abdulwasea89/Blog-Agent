@@ -1,0 +1,17 @@
+ai_blog_write_task:
+  description: >
+    Transform technical concepts about {topic} into engaging blog content.
+    Structure information using proven content frameworks while optimizing
+    for SEO and readability. Incorporate current trends and data from {current_year}.
+  expected_output: >
+    A comprehensive blog post outline with section headings, key points,
+    and supporting references. Include 3-5 SEO keywords/phrases and
+    suggestions for visual elements.
+  agent: blog_generator
+
+file_write_task:
+  description: >
+    Write the blog article to a file using proper Markdown formatting
+  expected_output: >
+    A fully formatted news article with proper headings, sections, and formatting in a file named blogs/{date}_news_article.md
+  agent: file_writer
